@@ -1,0 +1,172 @@
+body{
+    font-family: tahoma, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+}
+
+.header{
+    font-size: 24px;
+    text-align: center;
+}
+
+.prodName{
+    font-size: 18px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    align-items: top;
+}
+  
+.flex-container > div {
+    background-color: transparent;
+    margin: 5px;
+    padding: 5px;
+}
+
+input.basket {
+    background-color: transparent;
+    border: 0px solid;
+    width: 80px;
+}
+
+input.prods {
+    font-family: tahoma, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+}
+  
+div.basket {
+    width: 200px; 
+    height: 100%;
+    text-align: center;
+}
+
+div.checkout{
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    top: 100px;
+    overflow: hidden;
+    background-color: rgb(255, 253, 223);
+    text-align: center;
+}
+
+table.checkout{
+    width: 500px;
+    margin-left:auto; 
+    margin-right:auto;
+    border-spacing: 0px;
+    border: 1px solid black;
+}
+
+td.basketImgCell{
+    padding: 50px;
+    width: 50%;
+}
+
+div.shopFront{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+}
+
+td.itemsLeft{
+    border: 0px solid black;
+    width: 350px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+
+td.itemsRight{
+    border: 0px solid black;
+    width: 50px;
+    text-align: right;
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+
+td.removeCells{
+    border: 0px solid black;
+    width: 100px;
+    text-align: right;
+    padding: 15px;
+}
+
+td.AltLeft{
+    border: 0px solid black;
+    width: 350px;
+    text-align: right;
+    padding: 15px;
+}
+
+td.AltRight{
+    border: 0px solid black;
+    width: 50px;
+    text-align: right;
+    padding: 15px;
+}
+
+td.provBasket{
+    vertical-align: top;
+    width: 200px;
+    background-color: rgb(255, 253, 223);
+}
+
+.altSelect{
+    background-color: transparent;
+}
+
+.enbolden{
+    font-weight: bold;
+    border-bottom: 0px solid black !important;
+}
+
+.myDialogTitleBarClass {
+	font-family: tahoma, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+    font-weight: 200;
+}
+
+.myDialogContentClass {
+	font-weight: 400;
+	font-family: tahoma, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.ui-dialog > .ui-widget-header {
+    background: rgb(243, 243, 243); 
+    color:#000;
+}
+
+input.smallB {
+    width: 30px;
+    height: 28px;
+    vertical-align:top;
+    text-align:center;
+    color:#000;
+    background-color:#fff;
+    border:1px solid black;
+    cursor:pointer;
+}
+
+input.smallB:hover {
+    color:#000;
+    background-color:#ccc
+}
+.prodImg{
+    border: 1px solid black;
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Products",
+    "updated": "2018-09-27 12:08:00",
+    "products":[
+        {"productID":"1", "name":"Peas", "GBP":".95", "unit":"bag", "image":"peas_sized.jpg"},
+        {"productID":"2", "name":"Eggs", "GBP":"2.1", "unit":"dozen", "image":"eggs_sized.jpg"},
+        {"productID":"3", "name":"Milk", "GBP":"1.3", "unit":"bottle", "image":"milk_sized.jpg"},
+        {"productID":"4", "name":"Beans", "GBP":".73", "unit":"can", "image":"beans_sized.jpg"}
+    ]
+}

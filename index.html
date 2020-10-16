@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <!-- Demonstration web site from Tony Jobbins -->	
+<head>
+	<meta charset="utf-8">
+    <title>Chipping Sodbury Grocers</title>
+    <link rel="shortcut icon" href="images/tom.gif">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script src="js/grocers.js"></script>
+</head>
+
+<body onload="downloadXchgRates(); loadProducts(); Switcheroo(false)">
+    <!-- Dialog box for successful update -->	
+    <div id="dialog" title="Chipping Sodbury Grocers" style="display: none;">
+		<p>The items have been added to your basket.</p>
+    </div>
+ 
+    <!-- Dialog box for successful update -->	
+    <div id="confirmDialog" title="Chipping Sodbury Grocers" style="display: none;">
+		<p>This is a test web site, and so unfortunately we cannot proceed with your purchases at this time.</p>
+    </div>    
+ 
+    <!-- Dialog box for input error -->	
+    <div id="inputErrorDialog" title="Chipping Sodbury Grocers" style="display: none;">
+		<p>Input error. Please enter a whole, positive quantity of items.</p>
+    </div>      
+
+    <!-- Header -->	
+    <img src="images/title.gif">
+    <p id="shopFrontGuidance"></p>
+
+    <!-- Shop front -->	
+    <div id="shopFront" class="shopFront">
+        <table>
+            <tr>
+                <td style="width: 100%">
+                    <div id="prods" class="flex-container">
+                    </div>
+                </td>
+                <td class="provBasket">
+                    <div id="basket" class="basket">
+                        <p><img src="images/basket.png" width="50px"></p>
+                        <p>Items: <input type="text" value="0" id="provNumItems" readonly class="basket"></p>
+                        <p>Value: <input type="text" value="0.00" id="provVal" readonly class="basket"></p>
+                        <p><input type="button" class="w3-button w3-white w3-border w3-border-black" id="checkoutButton" value="Checkout" onClick="Switcheroo(true)" disabled></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>  
+   
+    <!-- Checkout -->	
+    <div id="checkout" class="checkout"> 
+        <table>
+            <tr>
+                <td class="basketImgCell">
+                    <img src="images/basket.png">
+                </td>
+                <td>
+                    <br>    
+                    <div id="basketItems">
+                    </div>   
+                    <br>    
+                    <table class="checkout">
+                        <tr>
+                            <td class="removeCells">&nbsp;</td>
+                            <td class="AltLeft">Alternative currency&nbsp;&nbsp;<select class="altSelect" id='altCurr' onchange='changeAlt()'></select></td>
+                            <td class="AltRight"><input type='text' value='' id='altVal' readonly class='basket'></td>
+                        </tr>
+                    </table>
+                    <p>
+                        <input type="button" class="w3-button w3-white w3-border w3-border-black" id="returnToShop" value="Continue Shopping" onClick="Switcheroo(false)">
+                        <input type="button" class="w3-button w3-white w3-border w3-border-black" id="confirmPurchases" value="Confirm Purchases" onClick="showConfirmPurchaseDialog('confirmDialog')">
+                    </p>  
+                </td>
+                <td class="basketImgCell">
+                    <img src="images/basket.png">
+                </td>
+            </tr>
+        </table>               
+    </div>
+</body>
+</html>
